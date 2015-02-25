@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="./board.css" type="text/css">
+  </head>
+  <body>
+    <ul id="board" class="group">
+
+    </ul>
+    <script charset="utf-8">
+      for (var i=0; i< 64; i++){
+        console.log(i)
+
+        var ul = document.getElementById("board");
+        console.log(ul);
+        var li = document.createElement("li")
+        li.style.backgroundColor = parseInt((i / 8) + i) % 2 == 0 ? '#ababab' : '#fff';
+        
+        console.log(li)
+        ul.appendChild(li)
+    }
+    </script>
+  </body>
+</html>
